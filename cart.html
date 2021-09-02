@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>cart........!</h1>
+    <button class="btn btn-primary" id="gobacktoproductpage">
+      Go back to product page
+    </button>
+    <button id="checkout" class="btn btn-success">Check Out!</button>
+    <h3 id="empty_cart"></h3>
+    <div class="row" id="display_products_div"></div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              id="btn_cross"
+              class="close"
+              data-dismiss="modal"
+            >
+              &times;
+            </button>
+          </div>
+          <div class="modal-body">
+            <img id="img_in_modal" />
+            <p id="description_in_modal"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              id="close_btn"
+              class="btn btn-danger"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="cart.js"></script>
+  </body>
+</html>

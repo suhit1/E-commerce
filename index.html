@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <a href="./customer.html" target="_self" class="product_page"
+      >Go to product page</a
+    >
+    <div class="containerr">
+      <form id="Login_form">
+        <label for="username">Enter UserName : </label>
+        <input
+          autocomplete="off"
+          required
+          placeholder="Enter Username......."
+          type="text"
+          id="username_login"
+        />
+        <label for="passwd">Enter Password : </label>
+        <input
+          required
+          placeholder="Enter Password......"
+          type="password"
+          id="passwd_login"
+        />
+        <label for="mode">Select Account type:</label>
+        <select id="mode">
+          <option value="admin">Admin</option>
+          <option value="customer">Customer</option>
+        </select>
+        <input class="btn btn-primary" type="submit" id="login" value="Login" />
+        <a href="./signup.html" id="signup_link"
+          >Don't have an account? Sign Up</a
+        >
+        <h3 id="error"></h3>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

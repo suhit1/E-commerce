@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <h1 id="welcome"></h1>
+    <button id="logout" class="btn btn-danger">Logout</button>
+    <div id="add_product" class="add_product">
+      <form id="add_product_form">
+        <div class="block">
+          <label for="Product_name"
+            >Product Name :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product Name"
+            type="text"
+            id="Product_name"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="description">Product Description : &nbsp;</label>
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product Description"
+            type="text"
+            id="description"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="price"
+            >Product Price :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product price"
+            type="number"
+            id="price"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="quantity"
+            >Product Quantity :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product Quantity"
+            type="number"
+            id="quantity"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="image"
+            >Image URL :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            autocomplete="off"
+            placeholder="Enter image url"
+            type="text"
+            id="image_url"
+          />
+        </div>
+        <br />
+        <button class="btn btn-primary" id="add_product_btn">
+          Add Product
+        </button>
+      </form>
+    </div>
+    <div style="display: none" id="update_product" class="update_product">
+      <form id="update_product_form">
+        <div class="block">
+          <label for="Product_name"
+            >Product Name :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product Name"
+            type="text"
+            id="Product_name_update"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="description">Product Description : &nbsp;</label>
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product Description"
+            type="text"
+            id="description_update"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="price"
+            >Product Price :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product price"
+            type="number"
+            id="price_update"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="quantity"
+            >Product Quantity :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            required
+            autocomplete="off"
+            placeholder="Product Quantity"
+            type="number"
+            id="quantity_update"
+          />
+        </div>
+        <br />
+        <div class="block">
+          <label for="image"
+            >Image URL :
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+          >
+          <input
+            autocomplete="off"
+            placeholder="Enter image url"
+            type="text"
+            id="image_url_update"
+          />
+        </div>
+        <br />
+        <button class="btn btn-primary" id="update_product_btn">
+          Update Product
+        </button>
+      </form>
+    </div>
+    <div class="row" id="Added_products"></div>
+    <script src="admin.js"></script>
+  </body>
+</html>
