@@ -8,4 +8,4 @@
 
 #Screen Shots
 
-<image src="website_Screenshots/Login_Page.png">
+![](Website_Screenshots/Login_Page.png);
