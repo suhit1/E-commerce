@@ -77,7 +77,7 @@ let users = {};
 
 function getuserfromstorage() {
   let users = localStorage.getItem("user_details");
-  return users ? JSON.parse(users) : null;
+  return users ? JSON.parse(users) : [];
 }
 
 function checkForUserFromStorage(username) {
