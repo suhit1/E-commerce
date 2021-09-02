@@ -8,4 +8,4 @@
 
 #Screen Shots
 
-<image src="./website_Screenshots/Login Page.png">
+<image src="./website_Screenshots/LoginPage.png">
