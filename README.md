@@ -5,3 +5,7 @@
 3.  cutomers can view the description of products a modal box will appear on the screen.
     <br>
 4.  I have used Bootstrap,javascript,html,css to build this website
+
+#Screen Shots
+
+<image src="./website_Screenshots/Login Page.png">
