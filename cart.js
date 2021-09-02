@@ -45,7 +45,7 @@ function getfromstoragelogedinuser() {
 
 function getuseradtocartdetailsfromstorage() {
   let users = localStorage.getItem("add_to_cart_user");
-  return users ? JSON.parse(users) : null;
+  return users ? JSON.parse(users) : [];
 }
 
 let arr = users_add_to_cart_details.filter((element) => {
