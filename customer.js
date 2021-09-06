@@ -14,13 +14,6 @@ gotocart.addEventListener("click", function () {
   window.open("./cart.html", "_self");
 });
 
-// display welcome message
-
-let loged_in = localStorage.getItem("user");
-loged_in = JSON.parse(loged_in);
-
-customer.innerText = `Welcome ${loged_in}....!`;
-
 // if no user is sined in hide the go to cart button and logout button
 
 let user = localStorage.getItem("user");
@@ -29,7 +22,14 @@ if (user) {
   logout.style.display = "block";
   gotocart.style.display = "block";
   console.log("user loged in");
+  // display welcome message
+
+  let loged_in = localStorage.getItem("user");
+  loged_in = JSON.parse(loged_in);
+
+  customer.innerText = `Welcome ${loged_in}....!`;
 } else {
+  customer.innerText = `Welcome ....!`;
   console.log("no user loged in");
   logout.style.display = "none";
   gotocart.style.display = "none";
