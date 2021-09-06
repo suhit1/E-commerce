@@ -17,7 +17,18 @@ console.log(typeof product_arr);
 // if we click on checkout button
 
 checkout.addEventListener("click", function () {
-  alert(`Items Successfully Purchased!
+  console.log("che");
+  let users_add_to_cart_details = getuseradtocartdetailsfromstorage();
+  console.log(users_add_to_cart_details);
+  let loged_in_user = getfromstoragelogedinuser();
+  console.log(loged_in_user);
+  let add_to_cart_arr = users_add_to_cart_details.filter((element) => {
+    if (loged_in_user === element.user) return true;
+  });
+  console.log(add_to_cart_arr);
+  if (add_to_cart_arr.length === 0) alert("your cart is empty");
+  else
+    alert(`Items Successfully Purchased!
   will reach at your address soon...
   Thanks For Shopping With Us`);
 });
